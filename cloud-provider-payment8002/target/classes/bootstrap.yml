@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cloud-payment-service # 名称与8001一致
+    ####Spring Cloud Consul for Service Discovery
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+      config:
+        profile-separator: '-' # default value is ","，we update '-'
+        format: YAML
+
+# config/cloud-payment-service/data
+#       /cloud-payment-service-dev/data
+#       /cloud-payment-service-prod/data
