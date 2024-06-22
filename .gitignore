@@ -1,33 +1,46 @@
-*.class
-
-#package files
-
-*.war
-*.ear
-
-#kdiff3 ignore
+HELP.md
 target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
-#eclipse ignore
-.settings/
-.project
+### STS ###
+.apt_generated
 .classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+.log
 
-#idea
-.idea/
-/idea/
-*.ipr
-*.iml
+### IntelliJ IDEA ###
+.idea
 *.iws
+*.iml
+*.ipr
+.mvn
+mvnw*
 
-# temp file
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
 
-*.log
-*.cache
-*.diff
-*.patch
-*.tmp
+### VS Code ###
+.vscode/
 
-#system ignore
+### generated files ###
+bin/
+gen/
+
+### MAC ###
 .DS_Store
-Thumbs.db
+
+### Other ###
+logs/
+log
+temp/
